@@ -1,4 +1,5 @@
 #include "Menu.h"
+#include "Niveles.h"
 #include <string>
 
 using namespace std;
@@ -113,9 +114,13 @@ void Menu::ProcesarEventos() {
 					}
 				}
 			}
-			if (Keyboard::isKeyPressed(Keyboard::B)) {
+			if (Keyboard::isKeyPressed(Keyboard::Enter)) {
 				if (C->getPosition() == txt_jugar->getPosition()) {
-					Niveles();
+					Niveles* MenuNiveles;
+					MenuNiveles = new Niveles();
+				}
+				else {
+					//IF CON VENTANA DE MARCADORES
 				}
 			}
 			break;
