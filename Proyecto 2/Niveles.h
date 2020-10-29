@@ -16,7 +16,7 @@ private:
 	RenderWindow* ventana2;
 	int fps;
 	Font* fuente;
-	Text* txt_facil, * txt_medio, * txt_dificil, * txt_dinamico;
+	Text* txt_facil, * txt_medio, * txt_dificil, * txt_dinamico, * txt_volver;
 	Event* evento;
 	CircleShape* C2;
 };

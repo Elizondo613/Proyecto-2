@@ -1,5 +1,6 @@
 #include "Menu.h"
 #include "Niveles.h"
+#include "Marcadores.h"
 #include <string>
 
 using namespace std;
@@ -120,7 +121,16 @@ void Menu::ProcesarEventos() {
 					MenuNiveles = new Niveles();
 				}
 				else {
-					//IF CON VENTANA DE MARCADORES
+					if (C->getPosition() == txt_salir->getPosition()) {
+						ventana1->close();
+						exit(1);
+					}
+					else {
+						if (C->getPosition() == txt_marcador->getPosition()) {
+							Marcadores* VentanaMarcador;
+							VentanaMarcador = new Marcadores();
+						}
+					}
 				}
 			}
 			break;

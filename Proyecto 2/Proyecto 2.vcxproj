@@ -145,11 +145,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Marcadores.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Niveles.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Marcadores.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Niveles.h" />
   </ItemGroup>

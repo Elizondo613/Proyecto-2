@@ -41,6 +41,13 @@ Niveles::Niveles() {
 	txt_dinamico->setCharacterSize(20);
 	txt_dinamico->setFillColor(Color::Green);
 
+	txt_volver = new Text();
+	txt_volver->setFont(*fuente);
+	txt_volver->setString("VOLVER");
+	txt_volver->setPosition(170, 240);
+	txt_volver->setCharacterSize(20);
+	txt_volver->setFillColor(Color::Green);
+
 	C2 = new CircleShape({ 12 });
 	C2->setFillColor(Color::Transparent);
 	C2->setOutlineColor(Color::Transparent);
@@ -64,6 +71,7 @@ void Niveles::Dibujar() {
 	ventana2->draw(*txt_medio);
 	ventana2->draw(*txt_dificil);
 	ventana2->draw(*txt_dinamico);
+	ventana2->draw(*txt_volver);
 	ventana2->draw(*C2);
 	ventana2->display();
 }
@@ -73,7 +81,6 @@ void Niveles::ProcesarEventos() {
 		switch (evento->type) {
 		case Event::Closed:
 			ventana2->close();
-			exit(1);
 			break;
 
 		case Event::KeyPressed:
@@ -97,9 +104,16 @@ void Niveles::ProcesarEventos() {
 						}
 						else {
 							if (C2->getPosition() == txt_dinamico->getPosition()) {
-								C2->setPosition(170, 40);
+								C2->setPosition(170, 240);
 								txt_dinamico->setFillColor(Color::Green);
-								txt_facil->setFillColor(Color::White);
+								txt_volver->setFillColor(Color::White);
+							}
+							else {
+								if (C2->getPosition() == txt_volver->getPosition()) {
+									C2->setPosition(170, 40);
+									txt_volver->setFillColor(Color::Green);
+									txt_facil->setFillColor(Color::White);
+								}
 							}
 						}
 					}
@@ -108,9 +122,9 @@ void Niveles::ProcesarEventos() {
 			else {
 				if (Keyboard::isKeyPressed(Keyboard::Up)) {
 					if (C2->getPosition() == txt_facil->getPosition()) {
-						C2->setPosition(170, 190);
+						C2->setPosition(170, 240);
 						txt_facil->setFillColor(Color::Green);
-						txt_dinamico->setFillColor(Color::White);
+						txt_volver->setFillColor(Color::White);
 					}
 					else {
 						if (C2->getPosition() == txt_dinamico->getPosition()) {
@@ -130,11 +144,29 @@ void Niveles::ProcesarEventos() {
 									txt_medio->setFillColor(Color::Green);
 									txt_facil->setFillColor(Color::White);
 								}
+								else {
+									if (C2->getPosition() == txt_volver->getPosition()) {
+										C2->setPosition(170, 190);
+										txt_volver->setFillColor(Color::Green);
+										txt_dinamico->setFillColor(Color::White);
+									}
+								}
 							}
 						}
 					}
 				}
+				else {
+					if (Keyboard::isKeyPressed(Keyboard::Enter)) {
+						if (C2->getPosition() == txt_volver->getPosition()) {
+							ventana2->close();
+						}
+					}
+				}
 			}
+
+			break;
+
+		
 		}
 	}
 }
