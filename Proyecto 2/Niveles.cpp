@@ -1,4 +1,5 @@
 #include "Niveles.h"
+#include "Juego.h"
 #include <string>
 
 using namespace std;
@@ -159,6 +160,34 @@ void Niveles::ProcesarEventos() {
 					if (Keyboard::isKeyPressed(Keyboard::Enter)) {
 						if (C2->getPosition() == txt_volver->getPosition()) {
 							ventana2->close();
+						}
+						else {
+							if (C2->getPosition() == txt_facil->getPosition()) {
+								Juego* facil;
+								string fa;
+								facil = new Juego(fa);
+							}
+							else {
+								if (C2->getPosition() == txt_medio->getPosition()) {
+									Juego* medio;
+									string me, dio;
+									medio = new Juego(me, dio);
+								}
+								else {
+									if (C2->getPosition() == txt_dificil->getPosition()) {
+										Juego* dificil;
+										string di, fi, cil;
+										dificil = new Juego(di, fi, cil);
+									}
+									else {
+										if (C2->getPosition() == txt_dinamico->getPosition()) {
+											Juego* dinamico;
+											string d, a, m, co;
+											dinamico = new Juego(d, a, m, co);
+										}
+									}
+								}
+							}
 						}
 					}
 				}
