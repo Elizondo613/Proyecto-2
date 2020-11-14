@@ -1,5 +1,5 @@
 #include "Juego.h"
-#include "Cola.h"
+#include "Perder.h"
 #include <stdlib.h>
 #include <time.h>
 
@@ -7,8 +7,8 @@
 //FACIL
 Juego::Juego(string fa) {
 	fps = 60;
-	int x = rand() % (400 + 1);
-	int y = rand() % (400 + 1);
+	int x = rand() % (390 + 1);
+	int y = rand() % (390 + 1);
 	ventana4 = new RenderWindow(VideoMode(400, 400), "NIVEL FACIL");
 	ventana4->setFramerateLimit(fps);
 
@@ -26,8 +26,8 @@ Juego::Juego(string fa) {
 //MEDIO
 Juego::Juego(string me, string dio) {
 	fps = 60;
-	int x = rand() % (400 + 1), w = rand() % (400 + 1), a1 = rand() % (400 + 1);
-	int y = rand() % (400 + 1), z = rand() % (400 + 1), a2 = rand() % (400 + 1);
+	int x = rand() % (390 + 1), w = rand() % (390 + 1), a1 = rand() % (390 + 1);
+	int y = rand() % (390 + 1), z = rand() % (390 + 1), a2 = rand() % (390 + 1);
 	ventana5 = new RenderWindow(VideoMode(400, 400), "NIVEL MEDIO");
 	ventana5->setFramerateLimit(fps);
 
@@ -43,19 +43,19 @@ Juego::Juego(string me, string dio) {
 	R->setFillColor(Color::White);
 	R->setOutlineColor(Color::White);
 	R->setOutlineThickness(2);
-	R->setPosition(y, x);
+	R->setPosition(a1, a2);
 
 	R2 = new RectangleShape({ 20,20 });
 	R2->setFillColor(Color::White);
 	R2->setOutlineColor(Color::White);
 	R2->setOutlineThickness(2);
-	R2->setPosition(a1, a2);
+	R2->setPosition(x, z);
 
 	R3 = new RectangleShape({ 80,20 });
 	R3->setFillColor(Color::White);
 	R3->setOutlineColor(Color::White);
 	R3->setOutlineThickness(2);
-	R3->setPosition(a2, a1);
+	R3->setPosition(w, z);
 
 	GameLoopM();
 }
@@ -63,8 +63,8 @@ Juego::Juego(string me, string dio) {
 //DIFICIL
 Juego::Juego(string di, string fi, string cil) {
 	fps = 60;
-	int x = rand() % (400 + 1), w = rand() % (400 + 1), a1 = rand() % (400 + 1);
-	int y = rand() % (400 + 1), z = rand() % (400 + 1), a2 = rand() % (400 + 1);
+	int x = rand() % (390 + 1), w = rand() % (390 + 1), a1 = rand() % (390 + 1);
+	int y = rand() % (390 + 1), z = rand() % (390 + 1), a2 = rand() % (390 + 1);
 	ventana6 = new RenderWindow(VideoMode(400, 400), "NIVEL DIFICIL");
 	ventana6->setFramerateLimit(fps);
 
@@ -106,8 +106,8 @@ Juego::Juego(string di, string fi, string cil) {
 //DINAMICO
 Juego::Juego(string d, string a, string m, string co) {
 	fps = 60;
-	int x = rand() % (400 + 1), w = rand() % (400 + 1), a1 = rand() % (400 + 1);
-	int y = rand() % (400 + 1), z = rand() % (400 + 1), a2 = rand() % (400 + 1);
+	int x = rand() % (390 + 1), w = rand() % (390 + 1), a1 = rand() % (390 + 1);
+	int y = rand() % (390 + 1), z = rand() % (390 + 1), a2 = rand() % (390 + 1);
 	ventana7 = new RenderWindow(VideoMode(400, 400), "NIVEL DINAMICO");
 	ventana7->setFramerateLimit(fps);
 
@@ -215,8 +215,30 @@ void Juego::DibujarDI() {
 void Juego::ProcesarEventos() {
 	while (ventana4->pollEvent(*evento4)) {
 		switch (evento4->type) {
+		//CERRAR VENTANA
 		case Event::Closed:
 			ventana4->close();
+			break;
+		//MOVIMIENTO
+		case Event::KeyPressed:
+				if (Keyboard::isKeyPressed(Keyboard::Up)) {
+					C5->setPosition(C5->getPosition().x, C5->getPosition().y - 2);
+				}
+				else {
+					if (Keyboard::isKeyPressed(Keyboard::Down)) {
+						C5->setPosition(C5->getPosition().x, C5->getPosition().y + 2);
+					}
+					else {
+						if (Keyboard::isKeyPressed(Keyboard::Left)) {
+							C5->setPosition(C5->getPosition().x - 2, C5->getPosition().y);
+						}
+						else {
+							if (Keyboard::isKeyPressed(Keyboard::Right)) {
+								C5->setPosition(C5->getPosition().x + 2, C5->getPosition().y);
+							}
+						}
+					}
+				}
 			break;
 		}
 	}
@@ -225,8 +247,46 @@ void Juego::ProcesarEventos() {
 void Juego::ProcesarEventosM() {
 	while (ventana5->pollEvent(*evento5)) {
 		switch (evento5->type) {
+		//CERRAR VENTANA
 		case Event::Closed:
 			ventana5->close();
+			break;
+		//MOVIMIENTO
+		case Event::KeyPressed:
+			if (Keyboard::isKeyPressed(Keyboard::Up)) {
+				C5->setPosition(C5->getPosition().x, C5->getPosition().y - 3);
+				if (C5->getGlobalBounds().intersects(R->getGlobalBounds()) || C5->getGlobalBounds().intersects(R2->getGlobalBounds()) || C5->getGlobalBounds().intersects(R3->getGlobalBounds())) {
+					Perder* PantallaPerder;
+					PantallaPerder = new Perder();
+				}
+			}
+			else {
+				if (Keyboard::isKeyPressed(Keyboard::Down)) {
+					C5->setPosition(C5->getPosition().x, C5->getPosition().y + 3);
+					if (C5->getGlobalBounds().intersects(R->getGlobalBounds()) || C5->getGlobalBounds().intersects(R2->getGlobalBounds()) || C5->getGlobalBounds().intersects(R3->getGlobalBounds())) {
+						Perder* PantallaPerder;
+						PantallaPerder = new Perder();
+					}
+				}
+				else {
+					if (Keyboard::isKeyPressed(Keyboard::Left)) {
+						C5->setPosition(C5->getPosition().x - 3, C5->getPosition().y);
+						if (C5->getGlobalBounds().intersects(R->getGlobalBounds()) || C5->getGlobalBounds().intersects(R2->getGlobalBounds()) || C5->getGlobalBounds().intersects(R3->getGlobalBounds())) {
+							Perder* PantallaPerder;
+							PantallaPerder = new Perder();
+						}
+					}
+					else {
+						if (Keyboard::isKeyPressed(Keyboard::Right)) {
+							C5->setPosition(C5->getPosition().x + 3, C5->getPosition().y);
+							if (C5->getGlobalBounds().intersects(R->getGlobalBounds()) || C5->getGlobalBounds().intersects(R2->getGlobalBounds()) || C5->getGlobalBounds().intersects(R3->getGlobalBounds())) {
+								Perder* PantallaPerder;
+								PantallaPerder = new Perder();
+							}
+						}
+					}
+				}
+			}
 			break;
 		}
 	}
@@ -235,8 +295,47 @@ void Juego::ProcesarEventosM() {
 void Juego::ProcesarEventosD() {
 	while (ventana6->pollEvent(*evento6)) {
 		switch (evento6->type) {
+		//CERRAR VENTANA
 		case Event::Closed:
 			ventana6->close();
+			break;
+
+		//MOVIMIENTO
+		case Event::KeyPressed:
+			if (Keyboard::isKeyPressed(Keyboard::Up)) {
+				C5->setPosition(C5->getPosition().x, C5->getPosition().y - 4);
+				if (C5->getGlobalBounds().intersects(R->getGlobalBounds()) || C5->getGlobalBounds().intersects(R2->getGlobalBounds()) || C5->getGlobalBounds().intersects(R3->getGlobalBounds()) || C5->getGlobalBounds().intersects(R4->getGlobalBounds())) {
+					Perder* PantallaPerder;
+					PantallaPerder = new Perder();
+				}
+			}
+			else {
+				if (Keyboard::isKeyPressed(Keyboard::Down)) {
+					C5->setPosition(C5->getPosition().x, C5->getPosition().y + 4);
+					if (C5->getGlobalBounds().intersects(R->getGlobalBounds()) || C5->getGlobalBounds().intersects(R2->getGlobalBounds()) || C5->getGlobalBounds().intersects(R3->getGlobalBounds()) || C5->getGlobalBounds().intersects(R4->getGlobalBounds())) {
+						Perder* PantallaPerder;
+						PantallaPerder = new Perder();
+					}
+				}
+				else {
+					if (Keyboard::isKeyPressed(Keyboard::Left)) {
+						C5->setPosition(C5->getPosition().x - 4, C5->getPosition().y);
+						if (C5->getGlobalBounds().intersects(R->getGlobalBounds()) || C5->getGlobalBounds().intersects(R2->getGlobalBounds()) || C5->getGlobalBounds().intersects(R3->getGlobalBounds()) || C5->getGlobalBounds().intersects(R4->getGlobalBounds())) {
+							Perder* PantallaPerder;
+							PantallaPerder = new Perder();
+						}
+					}
+					else {
+						if (Keyboard::isKeyPressed(Keyboard::Right)) {
+							C5->setPosition(C5->getPosition().x + 4, C5->getPosition().y);
+							if (C5->getGlobalBounds().intersects(R->getGlobalBounds()) || C5->getGlobalBounds().intersects(R2->getGlobalBounds()) || C5->getGlobalBounds().intersects(R3->getGlobalBounds()) || C5->getGlobalBounds().intersects(R4->getGlobalBounds())) {
+								Perder* PantallaPerder;
+								PantallaPerder = new Perder();
+							}
+						}
+					}
+				}
+			}
 			break;
 		}
 	}
@@ -245,9 +344,52 @@ void Juego::ProcesarEventosD() {
 void Juego::ProcesarEventosDI() {
 	while (ventana7->pollEvent(*evento7)) {
 		switch (evento7->type) {
+		//CERRAR VENTANA
 		case Event::Closed:
 			ventana7->close();
+			break;
+
+		//MOVIMIENTO
+		case Event::KeyPressed:
+			if (Keyboard::isKeyPressed(Keyboard::Up)) {
+				C5->setPosition(C5->getPosition().x, C5->getPosition().y - 5);
+				if (C5->getGlobalBounds().intersects(R->getGlobalBounds()) || C5->getGlobalBounds().intersects(R2->getGlobalBounds()) || C5->getGlobalBounds().intersects(R3->getGlobalBounds()) || C5->getGlobalBounds().intersects(R4->getGlobalBounds())) {
+					Perder* PantallaPerder;
+					PantallaPerder = new Perder();
+				}
+			}
+			else {
+				if (Keyboard::isKeyPressed(Keyboard::Down)) {
+					C5->setPosition(C5->getPosition().x, C5->getPosition().y + 5);
+					if (C5->getGlobalBounds().intersects(R->getGlobalBounds()) || C5->getGlobalBounds().intersects(R2->getGlobalBounds()) || C5->getGlobalBounds().intersects(R3->getGlobalBounds()) || C5->getGlobalBounds().intersects(R4->getGlobalBounds())) {
+						Perder* PantallaPerder;
+						PantallaPerder = new Perder();
+					}
+				}
+				else {
+					if (Keyboard::isKeyPressed(Keyboard::Left)) {
+						C5->setPosition(C5->getPosition().x - 5, C5->getPosition().y);
+						if (C5->getGlobalBounds().intersects(R->getGlobalBounds()) || C5->getGlobalBounds().intersects(R2->getGlobalBounds()) || C5->getGlobalBounds().intersects(R3->getGlobalBounds()) || C5->getGlobalBounds().intersects(R4->getGlobalBounds())) {
+							Perder* PantallaPerder;
+							PantallaPerder = new Perder();
+						}
+					}
+					else {
+						if (Keyboard::isKeyPressed(Keyboard::Right)) {
+							C5->setPosition(C5->getPosition().x + 5, C5->getPosition().y);
+							if (C5->getGlobalBounds().intersects(R->getGlobalBounds()) || C5->getGlobalBounds().intersects(R2->getGlobalBounds()) || C5->getGlobalBounds().intersects(R3->getGlobalBounds()) || C5->getGlobalBounds().intersects(R4->getGlobalBounds())) {
+								Perder* PantallaPerder;
+								PantallaPerder = new Perder();
+							}
+						}
+					}
+				}
+			}
 			break;
 		}
 	}
 }
+
+
+
+//while ((C5->getPosition().x < 0 && C5->getPosition().y < 400) || (C5->getPosition().y < 0 && C5->getPosition().x != 400))

@@ -27,8 +27,6 @@ public:
 	void ProcesarEventosD();
 	void ProcesarEventosDI();
 
-	//int Aleatorio(int num);
-
 private:
 	string fa, me, dio, di, fi, cil, d, a, m, co;
 	RenderWindow* ventana4, * ventana5, * ventana6, * ventana7;

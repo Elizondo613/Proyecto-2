@@ -3,11 +3,11 @@ C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proy
 C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(21,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
 C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(40,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
 C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(40,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(46,20): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(46,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
 C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(46,17): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(52,22): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(52,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
 C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(52,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(58,22): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(58,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
 C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(58,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
 C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(77,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
 C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(77,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
