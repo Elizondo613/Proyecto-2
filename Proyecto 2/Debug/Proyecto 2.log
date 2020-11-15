@@ -1,32 +1,82 @@
 ﻿  Juego.cpp
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(21,20): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(21,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(40,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(40,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(46,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(46,17): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(52,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(52,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(58,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(58,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(77,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(77,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(83,20): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(83,17): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(89,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(89,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(95,22): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(95,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(101,22): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(101,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(120,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(120,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(126,20): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(126,17): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(132,22): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(132,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(138,22): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(138,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(144,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(144,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(378,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(403,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(428,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(453,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(478,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(507,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(532,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(557,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(582,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(607,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(636,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(661,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(686,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(711,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(736,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(765,15): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(790,15): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(815,15): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(840,15): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(865,15): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(910,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(938,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(963,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(988,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1013,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1047,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1072,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1097,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1122,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1147,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1180,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1205,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1230,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1255,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1280,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1313,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1338,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1363,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1388,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1413,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1463,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1488,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1513,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1538,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1563,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1596,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1621,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1646,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1671,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1696,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1729,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1754,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1779,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1804,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1829,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1862,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1887,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1912,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1937,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(1962,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2012,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2037,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2062,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2087,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2112,11): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2145,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2170,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2195,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2220,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2245,12): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2278,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2303,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2328,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2353,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2378,13): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2411,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2436,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2461,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2486,14): warning C4552: "+": el resultado de la expresión no se usa
+C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Proyecto 2\Juego.cpp(2511,14): warning C4552: "+": el resultado de la expresión no se usa
   Proyecto 2.vcxproj -> C:\Users\Canna\Desktop\Universidad\Progra\Programación Avanzada\Proyecto 2\Debug\Proyecto 2.exe

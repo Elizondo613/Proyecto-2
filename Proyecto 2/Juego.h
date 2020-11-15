@@ -30,9 +30,11 @@ public:
 private:
 	string fa, me, dio, di, fi, cil, d, a, m, co;
 	RenderWindow* ventana4, * ventana5, * ventana6, * ventana7;
-	int fps;
+	int fps, cont = 0;
 	Event* evento4, * evento5, * evento6, * evento7;
-	CircleShape* C5;
-	RectangleShape* R, *R2, *R3, *R4;
+
+	//OBSTÁCULOS Y FRUTAS
+	CircleShape* C5, * Manzana, * Pera, * Fresa;
+	RectangleShape* R, *R2, *R3, *R4, *R5, *Piña, *Banano;
 };
 
